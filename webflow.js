@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Replace the placeholders in the template content
             newElement.innerHTML = templateContent
                 .replace('http://{{link}}', article.link || '#')
+                .replace('{{subtitle}}', article.subtitle)
                 .replace('{{title}}', article.title);
 
             // Append the new element to the fragment
